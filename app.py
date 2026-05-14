@@ -15,7 +15,6 @@ st.title("Consola de Inteligencia de la Alianza")
 # Uso cache para que no tarde tanto al mover los filtros
 @st.cache_data
 def cargar_csv():
-    # El archivo tiene que estar en la misma carpeta
     datos = pd.read_csv('players_data.csv')
     return datos
 
